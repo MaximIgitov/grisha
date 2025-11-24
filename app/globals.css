@@ -1,26 +1,89 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+    --font-sans: var(--font-manrope);
+    --font-heading: var(--font-onest);
+    --font-mono: var(--font-fliege-mono);
+    --font-oswald: var(--font-oswald);
+    --font-science-gothic: "Science Gothic", sans-serif;
+
+    --color-base-text: #24242499;
+    --color-heading: #242424;
+    --color-border-inactive: #24242433;
+    --color-active-icon: #2caeff;
+
+    --radius-tag: 12px;
+    --radius-card: 24px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* Custom Utilities */
+@layer utilities {
+    .text-heading-desktop {
+        font-family: var(--font-heading);
+        font-size: 40px;
+        line-height: 1.2;
+    }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+    .text-body-desktop {
+        font-family: var(--font-sans);
+        font-size: 24px;
+        line-height: 1.5;
+    }
+
+    .text-heading-mobile {
+        font-family: var(--font-heading);
+        font-size: 24px;
+        line-height: 1.2;
+    }
+
+    .text-body-mobile {
+        font-family: var(--font-sans);
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .text-section-mobile {
+        font-family: var(--font-heading);
+        font-size: 20px;
+        line-height: 1.3;
+    }
+
+    .text-section-desktop {
+        font-family: var(--font-heading);
+        font-size: 40px;
+        line-height: 1.2;
+    }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-base-text);
+    font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-heading);
+    font-family: var(--font-heading);
+}
+
+button,
+.btn {
+    font-family: var(--font-mono);
+}
+
+.font-oswald {
+    font-family: var(--font-oswald);
+}
+
+.font-science-gothic {
+    font-family: var(--font-science-gothic);
+}
+
+::selection {
+    background-color: var(--color-active-icon);
+    color: white;
 }

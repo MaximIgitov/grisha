@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Grisha - Personal Portfolio
+
+This is a Next.js project initialized with Tailwind CSS v4, TypeScript, and Framer Motion.
 
 ## Getting Started
 
-First, run the development server:
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+2. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+3. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Project Structure
+
+- `app/`: Next.js App Router pages and layout.
+- `components/`: React components.
+- `content/`: Markdown files for cases.
+  - `personal-cases/`: Personal projects.
+  - `work-cases/`: Work projects.
+- `lib/`: Utility functions.
+- `public/`: Static assets (fonts, images).
+
+## Adding Cases
+
+To add a new case, create a `.md` file in `content/personal-cases/` or `content/work-cases/`.
+
+Format:
+
+```markdown
+---
+title: "Project Name"
+description: "Short description"
+image: "/images/cases/project.png"
+tags: ["Tag1", "Tag2"]
+date: "2024"
+---
+
+# Header
+
+Content goes here...
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Fonts
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Manrope** (Google Fonts) - Base text
+- **Onest** (Google Fonts) - Headings
+- **Fliege Mono** (Space Mono fallback) - Buttons and Technical text
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Styling
 
-## Learn More
+Styles are defined in `app/globals.css` using Tailwind v4 `@theme` directives.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Colors:
+- Base Text: `#24242499`
+- Heading: `#242424`
+- Active Icon: `#2CAEFF`
