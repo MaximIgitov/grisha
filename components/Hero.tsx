@@ -16,9 +16,7 @@ export default function Hero() {
                 >
                     <div className="inline-flex items-center gap-2 px-4 py-3 rounded-tag bg-[#E5F4FF] text-heading text-sm md:text-base font-medium leading-tight">
                         <Info className="w-4 h-4 shrink-0 text-heading" />
-                        <span>
-                            Пока это уведомление активно - я в поисках работы
-                        </span>
+                        <span>Открыт к новым проектам и предложениям</span>
                     </div>
                 </motion.div>
 
@@ -29,11 +27,11 @@ export default function Hero() {
                     className="mb-8 md:mb-12"
                 >
                     <h1 className="text-2xl md:text-[40px] font-bold mb-2 md:mb-3">
-                        Привет, меня зовут Гриша ✌
+                        Привет, меня зовут Григорий Речкунов ✌
                     </h1>
 
                     <p className="text-base md:text-2xl text-base-text/60 font-medium mt-5">
-                        UX/UI + Product & Web дизайнер
+                        Senior Web / Product Designer
                     </p>
                 </motion.div>
 
@@ -44,12 +42,12 @@ export default function Hero() {
                     className="mb-8 md:mb-12"
                 >
                     <p className="text-lg md:text-2xl text-heading font-medium ">
-                        Мне 21 год, я UX/UI, product и web дизайнер из Москвы.{" "}
+                        Я проектирую интерфейсы веб-сервисов, CRM/ERP и мобильных
+                        приложений.{" "}
                         <span className="underline">
-                            Более 3 лет занимаюсь созданием цифровых продуктов:
-                        </span>{" "}
-                        от исследования и структуры до продуманных интерфейсов и
-                        финальных макетов для разработки.
+                            Веду проекты от исследования и гипотез до запуска и
+                            сопровождения с разработкой.
+                        </span>
                     </p>
                 </motion.div>
 
@@ -76,9 +74,10 @@ export default function Hero() {
                     transition={{ duration: 0.5, delay: 0.4 }}
                 >
                     <p className="text-lg md:text-2xl text-heading ">
-                        В работе совмещаю аккуратный подход с фокусом на метрики
-                        бизнеса и удобство пользователей. Знаю дизайн-систему и
-                        свободно общаюсь с командой разработки.
+                        В работе опираюсь на метрики, сессии пользователей,
+                        интервью и тесты. Делаю дизайн-системы, защищаю решения
+                        перед стейкхолдерами и говорю с разработкой на одном
+                        языке.
                     </p>
                 </motion.div>
             </div>
