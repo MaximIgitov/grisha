@@ -31,7 +31,7 @@ export default function Hero() {
                     </h1>
 
                     <p className="text-base md:text-2xl text-base-text/60 font-medium mt-5">
-                        Senior Web / Product Designer
+                        Middle Web / Product Designer
                     </p>
                 </motion.div>
 

@@ -18,7 +18,7 @@ export default function Projects({
     isOtherProjects,
     workCases,
 }: ProjectsProps) {
-    const [activeTab, setActiveTab] = useState<"personal" | "work">("personal");
+    const [activeTab, setActiveTab] = useState<"personal" | "work">("work");
 
     const currentCases = activeTab === "personal" ? personalCases : workCases;
 
